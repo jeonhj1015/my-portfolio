@@ -1,0 +1,78 @@
+/* 2026-05-20 생성 - Skills CSS 모듈 */
+
+.section {
+  padding: 100px 24px;
+  background-color: #111111;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #7ee8a2;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 28px;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: default;
+}
+
+.category {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 14px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 16px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

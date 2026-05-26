@@ -1,0 +1,111 @@
+/* 2026-05-20 생성 - Contact CSS 모듈 */
+
+.section {
+  padding: 100px 24px 0;
+  background-color: #111111;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #7ee8a2;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: #a0a0a0;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 48px;
+}
+
+.cardGroup {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 32px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+  min-width: 240px;
+}
+
+.card:hover {
+  border-color: #7ee8a2;
+  transform: translateY(-6px);
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  color: #7ee8a2;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.cardValue {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-weight: 500;
+  text-align: left;
+}
+
+.footer {
+  border-top: 1px solid #2a2a2a;
+  padding: 24px;
+  text-align: center;
+}
+
+.footerText {
+  color: #555555;
+  font-size: 0.85rem;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 16px 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .cardGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    min-width: unset;
+    max-width: 340px;
+  }
+}

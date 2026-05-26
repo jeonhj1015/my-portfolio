@@ -1,0 +1,180 @@
+/* 2026-05-20 생성 - Projects CSS 모듈 */
+
+.section {
+  padding: 100px 24px;
+  background-color: #0f0f0f;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #7ee8a2;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 36px;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: default;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.teamBadge {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  background-color: #1e3a2f;
+  color: #7ee8a2;
+  border-radius: 20px;
+  border: 1px solid #7ee8a2;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #7ee8a2;
+}
+
+.linkGroup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.link {
+  padding: 6px 16px;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.link:hover {
+  border-color: #7ee8a2;
+  color: #7ee8a2;
+}
+
+.liveLink {
+  padding: 6px 16px;
+  border: 1px solid #7ee8a2;
+  border-radius: 8px;
+  color: #7ee8a2;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.liveLink:hover {
+  opacity: 0.8;
+}
+
+.description {
+  color: #a0a0a0;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.roleBox {
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.roleLabel {
+  font-size: 0.75rem;
+  color: #7ee8a2;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.roleText {
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 5px 12px;
+  background-color: #222222;
+  border: 1px solid #3a3a3a;
+  border-radius: 20px;
+  color: #a0a0a0;
+  font-size: 0.8rem;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 16px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .cardTop {
+    flex-direction: column;
+  }
+
+  .projectTitle {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,102 @@
+/* 2026-05-20 생성 - Header CSS 모듈 */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2a2a2a;
+  z-index: 1000;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7ee8a2;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #7ee8a2;
+}
+
+/* 햄버거 버튼 - 모바일에서만 표시 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #e0e0e0;
+  transition: all 0.3s;
+}
+
+/* 모바일 메뉴 */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  background-color: #1a1a1a;
+  border-top: 1px solid #2a2a2a;
+}
+
+.mobileMenu.open {
+  display: flex;
+}
+
+.mobileNavLink {
+  padding: 16px 24px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1rem;
+  border-bottom: 1px solid #2a2a2a;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.mobileNavLink:hover {
+  color: #7ee8a2;
+  background-color: #222222;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

@@ -1,0 +1,97 @@
+/* 2026-05-20 생성 - Hero CSS 모듈 */
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 1.1rem;
+  color: #7ee8a2;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #7ee8a2;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  padding: 12px 32px;
+  background-color: #7ee8a2;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.primaryBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  padding: 12px 32px;
+  background-color: transparent;
+  color: #7ee8a2;
+  border: 1px solid #7ee8a2;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.secondaryBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
