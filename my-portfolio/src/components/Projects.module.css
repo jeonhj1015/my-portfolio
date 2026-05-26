@@ -1,4 +1,5 @@
 /* 2026-05-20 생성 - Projects CSS 모듈 */
+/* 2026-05-26 수정 - link에 아이콘+텍스트 정렬을 위한 flex 추가 */
 
 .section {
   padding: 100px 24px;
@@ -82,6 +83,9 @@
 }
 
 .link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 16px;
   border: 1px solid #3a3a3a;
   border-radius: 8px;
